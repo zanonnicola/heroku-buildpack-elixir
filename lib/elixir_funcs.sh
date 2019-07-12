@@ -7,7 +7,7 @@ function download_elixir() {
     elixir_changed=true
     local otp_version=$(otp_version ${erlang_version})
 
-    local download_url="https://repo.hex.pm/builds/elixir/${elixir_version}-otp-${otp_version}.zip"
+    local download_url="https://github.com/elixir-lang/elixir/releases/download/v1.9.0/Precompiled.zip"
 
     output_section "Fetching Elixir ${elixir_version} for OTP ${otp_version} from ${download_url}"
 
