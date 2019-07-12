@@ -11,7 +11,7 @@ function download_elixir() {
 
     output_section "Fetching Elixir ${elixir_version} for OTP ${otp_version} from ${download_url}"
 
-    curl -s ${download_url} -o ${cache_path}/$(elixir_download_file)
+    curl -L -s ${download_url} -o ${cache_path}/$(elixir_download_file)
 
     if [ $? -ne 0 ]; then
       output_section "Falling back to fetching Elixir ${elixir_version} for generic OTP version"
